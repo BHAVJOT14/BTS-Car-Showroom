@@ -1,0 +1,205 @@
+
+html {
+height: 50px;
+}
+
+body{
+font-family: "Lato", sans-serif;
+margin: 0;
+}
+
+.footer {
+background-color: #8eb28a;
+width: 100%;
+height: 50vh;
+position: relative;
+margin-bottom: -90px;
+}
+
+.share {
+width: 300px;
+height:40px;
+margin-top: 380px;
+top: 250px;
+left: 20px;
+margin-right: 450px;
+border-radius: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+position: relative;
+cursor: pointer;
+border: 5px solid black;
+font-size: 24px;
+background-color: azure;
+}
+
+.share:hover {
+transform: scale(1.1);
+}
+
+.para {
+position: absolute;
+display: inline;
+width: 900px;
+height: 30px;
+color: black;
+text-align: center;
+line-height: 0px;
+z-index: 999;
+transition: 0.6s linear;
+border-radius: 50px;
+}
+
+.share:hover .para {
+transform: translateX(-120%);
+transition-delay: 1s;
+}
+
+.share a {
+flex: 1;
+font-size: 26px;
+color: black;
+text-align: center;
+transform: translateX(-120%);
+opacity: 0;
+transition: 0.3s linear;
+}
+
+.share:hover a {
+opacity: 1;
+transform: translateX(0);
+}
+
+a:nth-of-type(1) {
+transition-delay: 1s;
+}
+
+a:nth-of-type(2) {
+transition-delay: 0.8s;
+}
+
+a:nth-of-type(3) {
+transition-delay: 0.6s;
+}
+
+a:nth-of-type(4) {
+transition-delay: 0.4s;
+}
+
+.fa-facebook {
+tansition: 0.5s; 
+}
+
+.fa-facebook:hover {
+color: blue;
+transform: scale(1.5);
+}
+
+.fa-instagram {
+tansition: 0.5s; 
+}
+
+.fa-instagram:hover {
+color: #3f729b;
+transform: scale(1.5);
+}
+
+.fa-whatsapp {
+tansition: 0.5s; 
+}
+
+.fa-whatsapp:hover {
+color: #3cba54;
+transform: scale(1.5);
+}
+
+.fa-google {
+tansition: 0.5s; 
+}
+
+.fa-google:hover {
+color: #f4c20d;
+transform: scale(1.5);
+}
+
+#overlay {
+position: fixed;
+display: none;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(0,0,0,0.5);
+z-index: 2;
+cursor: pointer;
+}
+
+#text{
+position: absolute;
+top: 70%;
+left: 50%;
+transform: translate(-50%,-55%);
+}
+
+.copy {
+font-family: Copperplate, "Copperplate Gothic Bold", fantasy;
+font-size: 20px;
+text-align: center;
+background-color: azure;
+word-spacing: 7px;
+position: relative;
+top: 290px;
+padding: 5px;
+}
+
+.creators {
+position: relative;
+float: right;
+right: 20px;
+bottom: 50px;
+font-size: 20px;
+text-align: center;
+}
+
+.lists {
+margin: 0;
+}
+
+.lists ul {
+float: left;
+position: relative;
+display: block;
+list-style: none;
+margin-right: 15px;
+left: 300px;
+bottom: 110px; 
+color: black;
+font-size: 17px;
+font-family: times new roman;
+}
+
+.lists h4 {
+margin-bottom: 0;
+font-family: Helvetica;
+font-size: 20px;
+}
+
+.lists ul li a {
+text-decoration: none;
+color: black;
+}
+
+.lists li a:hover {
+text-decoration: underline;
+} 
+
+.logo_f {
+position: relative;
+float: left;
+bottom: 90px;
+right: 900px;
+}

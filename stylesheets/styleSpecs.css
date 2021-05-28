@@ -1,0 +1,87 @@
+
+table, th {
+border: 0px solid black;
+}
+
+td {
+width: 205px;
+padding: 10px;
+margin: 10px;
+}
+
+table.center {
+}
+
+.btn {
+background-color: #333;
+border: 1px solid azure;
+color: white;
+padding: 20px 24px;
+cursor: pointer;
+width: auto;
+height: auto;
+display: block;
+font-size: 22px;
+font-weight: bold;
+border-radius: 10px;
+}
+
+.btn-group button:not(:last-child) {
+border-bottom: none;
+}
+
+.active, .btn:hover {
+background-color: #8eb28a;
+color: black;
+transform: scale(1.1);
+border: 0.5px solid black; 
+}
+
+.exp {
+background-color: #333;
+position: relative;
+color: white;
+padding: 12px;
+cursor: pointer;
+width: 200px;
+font-size: 25px;
+border-radius: 10px;
+margin: 20px;
+left: 450px;
+bottom: 150px;
+}
+
+.exp:hover {
+font-weight: bolder;
+transform: scale(1.1);
+padding-right: 25px;
+background-color: #8eb28a;
+color: black;
+}  
+
+.exp span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.exp span:after {
+content: ' \00bb';
+position: absolute;
+opacity: 0;
+bottom: 1px;
+right: -25px;
+transition: 0.5s;
+color: black;
+}
+
+.exp:hover span {
+padding-right: 25px;
+}
+
+.exp:hover span:after {
+opacity: 1;
+right: 0;
+}
+

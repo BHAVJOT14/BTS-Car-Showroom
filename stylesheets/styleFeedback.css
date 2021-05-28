@@ -1,0 +1,389 @@
+﻿
+body {
+font-family: Arial, Helvetica, sans-serif;
+}
+
+*
+ {
+box-sizing: border-box;
+margin:0;
+padding:0;
+}
+
+.slider {
+overflow:hidden;
+width:100%;
+height:850px;
+}
+
+.slider figure {
+filter: blur(3px);
+}
+
+.slider figure div {
+float:left;
+width:20%;
+}
+
+.slider figure img {
+width:100%;
+height:950px;
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+float:left;
+}
+
+.slider figure {
+position:relative;
+width:500%;
+margin:0;
+animation:animate 20s infinite;
+}
+
+@keyframes animate {
+0%{left:0%;}
+10%{left:0%;}
+12%{left:-100%;}
+22%{left:-100%;}
+24%{left:-200%;}
+34%{left:-200%;}
+36%{left:-300%;}
+46%{left:-300%;}
+48%{left:-200%;}
+58%{left:-200%;}
+60%{left:-100%;}
+70%{left:-100%;}
+72%{left:0%;}
+84%{left:0%;}	
+}
+
+.bg-text {
+background-color: rgb(0,0,0);
+background-color: rgba(0,0,0, 0.4);
+color: White;
+font-weight: bold;
+font-size: 22px;
+border: 10px solid #8eb28a;
+border-radius: 10px;
+position: relative;
+bottom: 820px;
+left: 400px;
+z-index: 2;
+width: 560px;
+padding: 20px;
+text-align: center;
+}
+
+.tD {
+height: 510px;
+position: absolute;
+bottom: -300px;
+left: 500px;
+border-radius: 10px;
+margin: 20px;
+max-width: 300px;
+padding: 16px;
+background-color: #333;
+color: white;
+}
+
+textarea {
+width: 100%;
+padding: 10px;
+margin: 5px 0 22px 0;
+border: none;
+background: #f1f1f1;
+}
+
+textarea:focus {
+background-color: #ddd;
+outline: none;
+}
+
+input {
+width: 100%;
+padding: 10px;
+margin: 5px 0 22px 0;
+border: none;
+background: #f1f1f1;
+}
+
+input:focus {
+background-color: #ddd;
+outline: none;
+}
+
+.btn {
+background-color: #8eb28a;
+position: relative;
+top: -5px;
+color: black;
+padding: 12px;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.7;
+}
+
+.btn:hover {
+opacity: 5;
+font-weight: bolder;
+transform: scale(1.1);
+padding-right: 25px;
+}  
+
+.btn span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.btn span:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+.btn:hover span:after {
+right: 0;
+}
+
+.tab {
+overflow: hidden;
+background-color: #333;
+width: 20%;
+height: 220px;
+position: relative;
+left: 150px; 
+bottom: 620px;
+text-align: center;
+border-radius: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.tab:hover {
+transform: scale(1.2);
+}
+
+.tab button {
+background-color: #333;
+color: white;
+float: center;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 30px 50px;
+padding-top: 25px;
+font-size: 17px;
+border-radius: 20px;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+
+.tab button:hover {
+background-color: #8eb28a;
+font-weight: bold;
+color: black;  
+}
+
+.tab button.active {
+background-color: #8eb28a;
+}
+
+.tabcontent {
+display: none;
+position: relative;
+bottom: 750px;
+right: 0;
+margin-bottom: -300px;
+}
+
+.back {
+display: block;
+float: right;
+}
+
+.back:hover {
+transform: scale(1.1);
+opacity: 5;
+}
+
+.back button {
+background-color: #8eb28a;
+border: none;
+width: 100px;
+height: 30px;
+display: inline-block;
+opacity: 0.7;
+}
+
+.back button:hover {
+opacity: 5;
+font-weight:bolder;
+}
+
+.back button a {
+text-decoration: none;
+color: black;
+}
+
+button span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+button span:after {
+content: '\00ab';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -25px;
+transition: 0.5s;
+}
+
+button:hover span {
+padding-right: 15px;
+opacity: 5;
+}
+
+button:hover span:after {
+opacity: 5;
+right: 0;
+}
+
+.tD1 {
+height: 550px;
+position: absolute;
+top: -230px;
+left: 500px;
+border-radius: 10px;
+margin: 20px;
+max-width: 300px;
+padding: 16px;
+background-color: #333;
+color: white;
+}
+
+textarea {
+width: 100%;
+padding: 10px;
+margin: 30px 0 22px 0;
+border: none;
+background: #f1f1f1;
+}
+
+textarea:focus {
+background-color: #ddd;
+outline: none;
+}
+
+input {
+width: 100%;
+padding: 10px;
+margin: 5px 0 22px 0;
+border: none;
+background: #f1f1f1;
+}
+
+input:focus {
+background-color: #ddd;
+outline: none;
+}
+
+.rate
+{
+float: left;
+height: 60px;
+padding-top: 10px; 
+}
+
+.rate h4 {
+position: relative;
+bottom: 10px;
+padding-bottom: 0;
+}
+
+.rate:not(:checked) > input 
+{
+position:absolute;
+top:-999px;
+}
+
+.rate:not(:checked) > label
+{
+float:right;
+width: 30px;
+overflow:hidden;
+white-space:nowrap;
+cursor:pointer;
+font-size:30px;
+color: #ccc;
+position: relative;
+bottom: 10px;
+}
+
+.rate:not(:checked) > label:before 
+{
+content:" ★ " ;
+}
+
+.rate > input:checked ~ label 
+{
+color: #ffc700;    
+}
+
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label 
+{
+color: #deb217;  
+}
+
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label 
+{
+color: #c59b08;
+}
+
+.contact {
+background-color: #333;
+border-radius: 20px;
+position: relative;
+color: white;
+font-family: "sofia";
+padding-top: 20px;
+padding-left: 20px;
+width: 20%;
+height: 140px;
+float: right;
+top: -500px;
+right: 90px;
+}
+
+.contact h6 {
+font-family: "sofia";
+font-size: 15px;
+}
+
+.contact:hover {
+transform: scale(1.1);
+}
+
+.contact a {
+text-decoration: none; 
+color: white;
+}
+
+.contact a:hover {
+text-decoration: underline;
+}

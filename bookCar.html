@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Book a Car | BTS MOTORS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "icon" href ="images\logo.png" type = "image/x-icon">
+<link rel="stylesheet" href="stylesheets\styleBookCar.css">
+</head>
+<body>
+
+<div class="bookTestDrive" id="sec1">
+<div class="slider">
+<figure>
+
+	<div class="slide">
+	<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/hyundai-1-1575903969.jpg" alt="hyundai logo">
+	</div>
+
+	<div class="slide">
+	<img src="https://autopolis.files.wordpress.com/2013/09/hyundai-pony-76-94a.jpg?w=584" alt="">
+	</div>
+	
+	<div class="slide">
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Hyundai_Pony_1984_Utrecht.jpg/1200px-Hyundai_Pony_1984_Utrecht.jpg" alt="">
+	</div>
+
+	<div class="slide">
+	<img src="https://www.fitmycar.com/journal/wp-content/uploads/2016/10/Hyundai-Pony-1.jpg" alt="">
+	</div>
+</figure>
+</div>
+<form class="tD" action="printBookCar.html" method="get">
+<h1>Book a Car</h1>
+
+<h4>Enter Your Personal Information</h4>
+
+<br>
+
+<label for="name"><b>Name <sup>*</sup></b></label>
+<input type="text" placeholder="Name" name="Name" required>
+
+<label for="mob"><b>Mobile Number <sup>*</sup></b></label>
+<input type="tel" placeholder="Mobile Number" name="Mobile Number" maxlength="10" required>
+    
+<label for="select"><b>Select Your Car</b></label>
+<select id="select">
+	<option value="Null" selected="selected"> Select a Car</option>
+	<option value="Model001 - Hyundai Tucson">Hyundai Tucson</option>
+    	<option value="Model002 - Hyundai Elantra">Hyundai Elantra</option>
+    	<option value="Model003 - Hyundai Creta">Hyundai Creta</option>
+   	<option value="Model004 - Hyundai Venue">Hyundai Venue</option>
+    	<option value="Model005 - Hyundai Grand i10">Hyundai Grand i10</option>
+    	<option value="Model006 - Hyundai Verna">Hyundai Verna</option>
+</select>
+
+
+
+<label for="select"class="purTime"><b>Select Purchase Time</b></label>
+<select class="purTimeSelect" id="purTimeSelect">
+
+	<option value="Null" selected="selected">Select Purchase Time</option>
+	<option value="Immediately">Immediately</option>
+	<option value="< 2 weeks">< 2 weeks</option>
+	<option value="3 weeks">3 Weeks</option>
+	<option value="4 weeks">4 weeks</option>
+	<option value="5-6 weeks">5-6 weeks</option>
+	<option value="7 weeks <">7 weeks <</option>
+
+</select>
+
+<input type="button" value="Click Once to Get Token" id="inc" onclick="incNumber()">
+<b><p id="display"></p></b>
+
+<button class="btn" type="Submit" onclick="select_Value()"><span class="span1">Confirm</span></button>
+</form>
+
+<div class="back"><button class="btn1"><a href="index1.html" style="text-decoration: none; color: white;"><span> HOME</span></button></div>
+</div>
+
+
+<script>
+
+var i = 0;
+
+function incNumber() 
+{
+	if (i < 99) 
+	{
+		i++;
+	}
+	else if (i = 99) 
+	{
+		i = 0;
+	}
+
+document.getElementById("display").innerHTML = i;
+
+alert("Your Token Number is : " + i);
+
+sessionStorage.setItem("ddvalue_tokenN",i);	
+
+}
+
+
+	function select_Value()
+	{
+		var select=document.getElementById("select").value;
+		var selectDate=document.getElementById("purTimeSelect").value;		
+
+		sessionStorage.setItem("ddvalue",select);
+		sessionStorage.setItem("ddvalue_Date",selectDate);
+		
+	
+		return true;
+	} 
+
+</script>
+
+</body>
+</html>

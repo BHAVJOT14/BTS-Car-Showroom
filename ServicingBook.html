@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Book a Car Service | BTS MOTORS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "icon" href ="images\logo.png" type = "image/x-icon">
+<style>
+
+body, html {
+height: 100%;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+*
+ {
+box-sizing: border-box;
+margin:0;
+padding:0;
+}
+
+.slider 
+{
+overflow:hidden;
+width:100%;
+height:100vh;
+filter: blur(3px);
+}
+
+.slider figure div
+{
+float:left;
+width:20%;
+}
+
+.slider figure img
+{
+width:100%;
+height:100vh;
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+float:left;
+}
+
+.slider figure 
+{
+position:relative;
+width:500%;
+margin:0;
+animation:animate 20s infinite;
+}
+
+@keyframes animate
+{
+0%{left:0%;}
+10%{left:0%;}
+12%{left:-100%;}
+22%{left:-100%;}
+24%{left:-200%;}
+34%{left:-200%;}
+36%{left:-300%;}
+46%{left:-300%;}
+48%{left:-200%;}
+58%{left:-200%;}
+60%{left:-100%;}
+70%{left:-100%;}
+72%{left:0%;}
+84%{left:0%;}	
+}
+
+.tD {
+position: absolute;
+right: 200px;
+margin: 20px;
+max-width: 300px;
+padding: 16px;
+background-color: #333;
+color: white;
+height: 520px;
+top: 50px;
+left: 500px;
+border-radius: 10px;
+}
+
+input {
+width: 100%;
+padding: 10px;
+margin: 5px 0 22px 0;
+border: none;
+background: #f1f1f1;
+}
+
+input:focus {
+background-color: #ddd;
+outline: none;
+}
+
+.btn {
+background-color: #8eb28a;
+position: relative;
+top: 30px;
+color: black;
+padding: 10px;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.7;
+}
+
+.btn:hover {
+opacity: 5;
+font-weight: bolder;
+transform: scale(1.1);
+padding-right: 25px;
+}  
+
+.btn span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.btn span:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+.btn:hover span:after {
+right: 0;
+}
+
+.back {
+display: block;
+position: relative;
+float: right;
+bottom: 40px;
+right: 30px;
+}
+
+.back:hover {
+transform: scale(1.1);
+}
+
+.back button {
+background-color: #333;
+border-radius: 3px;
+border: none;
+width: 100px;
+height: 30px;
+display: inline-block;
+}
+
+.back button a {
+text-decoration: none;
+color: white;
+}
+
+button span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+button span:after {
+content: '\00ab';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -25px;
+transition: 0.5s;
+}
+
+button:hover span {
+padding-right: 15px;
+}
+
+button:hover span:after {
+opacity: 1;
+right: 0;
+}
+
+select {
+position: relative;
+top: 5px; 
+width: 100%;
+height: 40px;
+padding: 10px;
+}
+
+select option {
+font-weight: 600;
+background-color: #333;
+color: white;
+}
+
+</style>
+</head>
+<body>
+
+<div class="bookTestDrive" id="sec1">
+<div class="slider">
+<figure>
+
+	<div class="slide">
+	<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/hyundai-1-1575903969.jpg" alt="hyundai logo">
+	</div>
+
+	<div class="slide">
+	<img src="https://autopolis.files.wordpress.com/2013/09/hyundai-pony-76-94a.jpg?w=584" alt="">
+	</div>
+	
+	<div class="slide">
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Hyundai_Pony_1984_Utrecht.jpg/1200px-Hyundai_Pony_1984_Utrecht.jpg" alt="">
+	</div>
+
+	<div class="slide">
+	<img src="https://www.fitmycar.com/journal/wp-content/uploads/2016/10/Hyundai-Pony-1.jpg" alt="">
+	</div>
+</figure>
+</div>
+
+<form action="printServiceBook.html" class="tD" method="get">
+<h1>Book a Car Service</h1>
+<h4>Enter Your Details</h4>
+
+<br>
+
+<label for="name"><b>Name <sup>*</sup></b></label>
+<input type="text" placeholder="Name" name="Name" required>
+
+<label for="mob"><b>Mobile Number <sup>*</sup></b></label>
+<input type="tel" placeholder="Mobile Number" name="Mobile Number" maxlength="10" required>
+
+<label for="select"><b>Select Your Date <sup>*</sup></b></label>
+<input type="date" name="Date" required>
+
+<label for="select"><b>Select Your Plan</b></label>
+<select id="select">
+	<option value="Null" selected="selected"> Select a Plan</option>
+	<option value="plan001 - Basic Service">Basic Service</option>
+    	<option value="plan002 - Pro Service">Pro Service</option>
+    	<option value="plan003 - Premium Service">Premium Service</option>
+   	<option value="plan004 - Premium Service (OPTI Coat)">Premium Service (OPTI Coat)</option>
+</select>
+
+<button class="btn" type="Submit" onclick="selectValue()"><span class="span1">Confirm</span></button>
+
+</form>
+
+<div class="back"><button class="btn1"><a href="index1.html" style="text-decoration: none; color: white;"><span> HOME</span></button></div>
+</div>
+
+<script>
+
+	function selectValue()
+	{
+		var sel=document.getElementById("select").value;
+		sessionStorage.setItem("ddvalue",sel);
+		return true;
+	} 
+
+</script>
+
+</body>
+</html>

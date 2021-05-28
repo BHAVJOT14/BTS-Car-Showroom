@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genuine Spare Parts</title>
+<link rel = "icon" href ="images\logo.png" type = "image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+* {box-sizing: border-box}
+
+body, html {
+height: 100%;
+margin: 0;
+font-family: Arial;
+}
+
+.tablink {
+background-color: #8eb28a;
+color: white;
+float: left;
+border: none;
+border-radius: 5px;
+outline: none;
+cursor: pointer;
+padding: 20px 16px;
+font-size: 17px;
+width: 240px;
+margin: 5px;
+}
+
+.tablink:hover {
+background-color: #777;
+font-size: 22px;
+font-weight: bold;
+}
+
+.tabcontent {
+color: black;
+display: none;
+padding: 70px 20px;
+height: 100%;
+}
+
+.heading {
+background-image: linear-gradient(#333, azure);
+padding: 10px;
+border-radius: 10px;
+text-align: center;
+font-size: 30px;
+font-weight: bold;
+width: 50%;
+position: relative;
+left: 300px;
+}
+
+.container {
+position: relative;
+width: 250px;
+height: 200px;
+padding: 10px;
+}
+
+.container p {
+font-weight: bold;
+text-align: center;
+font-size: 22px;
+}
+
+.imgP {
+display: block;
+width: 275px;
+height: 250px;
+backface-visibility: hidden;
+border: 10px solid #696969;
+border-radius: 10px;
+}
+
+.middle {
+position: relative;
+left: 200px;
+top: 100px;
+text-align: center;
+}
+
+.text {
+position: relative;
+left: 75px;
+text-align: left;
+padding: 20px;
+height: 200px;
+bottom: 325px;
+background-color: #dcdcdc;
+color: black;
+font-size: 22px;
+font-weight: bolder;
+width: 940px;
+border-radius: 10px;
+}
+
+.text1 {
+position: relative;
+bottom: 475px;
+left: 350px;
+background-color: #dcdcdc;
+color: black;
+font-size: 22px;
+font-weight: bolder;
+padding: 20px;
+width: 400px;
+border-radius: 10px;
+font-size: 20px;
+}
+
+.bttn {
+border-radius: 10px;
+background-color: #333;
+border: none;
+color: #FFFFFF;
+text-align: center;
+font-size: 22px;
+padding: 10px;
+width: 150px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+position: relative;
+left: 750px;
+bottom: 570px;
+}
+
+.bttn span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.bttn span:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+.bttn:hover span {
+padding-right: 25px;
+}
+
+.bttn:hover span:after {
+opacity: 1;
+right: 0;
+}
+
+</style>
+
+<script src="script\header.js"></script>
+</head>
+<body>
+
+<img src="images\partsBanner.jpg" width=100%>
+
+<button class="tablink" onclick="openPage('all', this, '#333')" id="defaultOpen">All</button>
+<button class="tablink" onclick="openPage('brakes', this, '#333')">Brakes</button>
+<button class="tablink" onclick="openPage('elect', this, '#333')">Electricals</button>
+<button class="tablink" onclick="openPage('engine', this, '#333')">Engine</button>
+<button class="tablink" onclick="openPage('suspen', this, '#333')">Suspension</button>
+
+<div id="all" class="tabcontent">
+  
+<p class="heading">Brakes</p>
+<div class="container">
+<img class="imgP" src="https://images-na.ssl-images-amazon.com/images/I/514VkyQ2r2L._SL1000_.jpg">
+<div class="middle">
+	<div class="text">
+		<h2>Brake Pad</h2>
+		<h5>Price :-<br>INR 999/- </h5>
+    	</div>
+    	<div class="text1">
+		<p>Available For All Hyundai Cars</p>
+	</div>
+	<button class="bttn" onclick=" window.open('sParts_PD_BrakePad.html', '_blank'); return false;"><span>Buy Now </span></button>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<!------------>
+
+<p class="heading">Electricals</p>
+<div class="container">
+<img class="imgP" src="https://images-na.ssl-images-amazon.com/images/I/61RcwpBlT-L._SY355_.jpg">
+<div class="middle">
+	<div class="text">
+		<h2>HeadLights</h2>
+		<h5>Price :- <br>INR 4499/- </h5>
+	</div>
+    	<div class="text1">
+		<p> Available For All Hyundai Cars</p>
+	</div>
+	<button class="bttn" onclick=" window.open('sParts_PD_Headlight.html', '_blank'); return false;"><span>Buy Now </span></button>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<!-------------------->
+
+<p class="heading">Engine</p>
+<div class="container">
+<img class="imgP" src="https://5.imimg.com/data5/KO/QU/MY-25422092/hyundai-car-compressor-500x500.jpg">
+<div class="middle">
+    	<div class="text">
+		<h2>Compressor Unit</h2>
+		<h5>Price :- <br>INR 24,999/-</h5>
+	</div>
+</div>
+<button class="bttn" style="top: -350px; left: 985px;" onclick=" window.open('sParts_PD_CU.html', '_blank'); return false;"><span>Buy Now </span></button>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<div class="container">
+<img class="imgP" src="https://images-na.ssl-images-amazon.com/images/I/41gGzxeQcJL.jpg">
+<div class="middle">
+    	<div class="text">
+		<h2>Engine Oil</h2>
+		<h5>Price:- <br>INR 249/Ltr</h5>
+	</div>
+    	<div class="text1">
+		<p> Available For All Hyundai Cars</p>
+	</div>
+	<button class="bttn" onclick=" window.open('sParts_PD_EngineOil.html', '_blank'); return false;"><span>Buy Now </span></button>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<div class="container">  
+<img class="imgP" src="https://images-na.ssl-images-amazon.com/images/I/71Q23N1rwoL._SL1500_.jpg">
+<div class="middle">
+	<div class="text">
+		<h2>Coolant Oil</h2>
+		<h5>Price:- <br>INR 199/Ltr</h5>
+	</div>
+    	<div class="text1">
+		<p> Available For All Hyundai Cars</p>
+	</div>
+	<button class="bttn" onclick=" window.open('sParts_PD_CoolantOil.html', '_blank'); return false;"><span>Buy Now </span></button>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<!-------------------------------->
+
+<p class="heading">Suspension</p>
+
+<div class="container"> 
+<img class="imgP" src="https://images-na.ssl-images-amazon.com/images/I/51o%2BUAb08xL._SL1162_.jpg">
+<div class="middle">
+    	<div class="text">
+		<h2>Front Shock Absorber</h2>
+		<h5>Price:- <br>INR 14,999/-</h5>
+	</div>
+	<button class="bttn" style="top: -450px; left: 750px;" onclick=" window.open('sParts_PD_FSA.html', '_blank'); return false;"><span>Buy Now </span></button>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<div class="container">
+<img class="imgP" src="https://i.pinimg.com/474x/1f/ee/1d/1fee1dcbf83dbba171794f6da15c3a8c.jpg">
+<div class="middle">
+    	<div class="text">
+		<h2>Front & Rear Shock Absorbers</h2>
+		<h5>Price:-<br> <b>Undefined</b> <sup>*</sup></h5>
+	</div>
+	<button class="bttn" style="top: -450px; left: 750px;" onclick=" window.open('sParts_PD_F&RSA.html', '_blank'); return false;"><span>Buy Now </span></button>
+</div>
+</div>
+
+</div>
+
+<!---------------------------------------------------------------------------->
+
+<div id="brakes" class="tabcontent">
+	<div class="container">
+  		<img class="imgP" src="https://images-na.ssl-images-amazon.com/images/I/514VkyQ2r2L._SL1000_.jpg">
+  			<div class="middle">
+    				<div class="text">
+					<h2>Brake Pad</h2>
+					<h5>Price :- <br>INR 999/- </h5>
+				</div>
+    				<div class="text1">
+					<p>Available For All Hyundai Cars</p>
+				</div>
+				<button class="bttn" onclick=" window.open('sParts_PD_BrakePad.html', '_blank'); return false;"><span>Buy Now </span></button>
+  			</div>
+	</div>
+</div>
+
+<!---------------------------------------------------------------------------->
+
+<div id="elect" class="tabcontent">
+	<div class="container">  
+  		<img class="imgP" src="https://images-na.ssl-images-amazon.com/images/I/61RcwpBlT-L._SY355_.jpg">
+  			<div class="middle">
+    				<div class="text">
+					<h2>HeadLights</h2>
+					<h5>Price :- <br>INR 4499/-</h5>
+				</div>
+    				<div class="text1">
+					<p>Available For All Hyundai Cars</p>
+				</div>
+				<button class="bttn" onclick=" window.open('sParts_PD_Headlight.html', '_blank'); return false;"><span>Buy Now </span></button>
+  			</div>
+	</div>
+</div>
+
+<!---------------------------------------------------------------------------->
+
+<div id="engine" class="tabcontent">
+	<div class="container">
+  		<img class="imgP" src="https://5.imimg.com/data5/KO/QU/MY-25422092/hyundai-car-compressor-500x500.jpg">
+  			<div class="middle">
+    				<div class="text">
+					<h2>Compressor Unit</h2>
+					<h5>Price :- <br>INR 24,999/-</h5>
+				</div>
+				<button class="bttn" style="top: -450px;" onclick=" window.open('sParts_PD_CU.html', '_blank'); return false;"><span>Buy Now </span></button>
+  			</div>
+	</div>
+
+<br>
+<br>
+<br>
+<br>
+
+	<div class="container">
+  		<img class="imgP" src="https://images-na.ssl-images-amazon.com/images/I/41gGzxeQcJL.jpg">
+  			<div class="middle">
+    				<div class="text">
+					<h2>Engine Oil</h2>
+					<h5>Price:- <br>INR 249/Ltr</h5>
+				</div>
+			    	<div class="text1">
+					<p> Available For All Hyundai Cars</p>
+				</div>
+				<button class="bttn" onclick=" window.open('sParts_PD_EngineOil.html', '_blank'); return false;"><span>Buy Now </span></button>
+  			</div>
+	</div>
+
+<br>
+<br>
+<br>
+<br>
+
+	<div class="container">
+  		<img class="imgP" src="https://images-na.ssl-images-amazon.com/images/I/71Q23N1rwoL._SL1500_.jpg">
+  			<div class="middle">
+    				<div class="text">
+					<h2>Coolant Oil</h2>
+					<h5>Price:- <br>INR 199/Ltr</h5>
+				</div>
+			    	<div class="text1">
+					<p> Available For All Hyundai Cars</p>
+				</div>
+				<button class="bttn" onclick=" window.open('sParts_PD_CoolantOil.html', '_blank'); return false;"><span>Buy Now </span></button>
+  			</div>
+	</div>
+</div>
+
+<!---------------------------------------------------------------------------->
+
+<div id="suspen" class="tabcontent">
+	<div class="container">  
+  		<img class="imgP" src="https://images-na.ssl-images-amazon.com/images/I/51o%2BUAb08xL._SL1162_.jpg">
+		  	<div class="middle">
+    				<div class="text">
+					<h2>Front Shock Absorber</h2>
+					<h5>Price:- <br>INR 14,999/-</h5>
+				</div>
+				<button class="bttn" style="top: -450px;" onclick=" window.open('sParts_PD_FSA.html', '_blank'); return false;"><span>Buy Now </span></button>
+  			</div>
+	</div>
+
+<br>
+<br>
+<br>
+<br>
+
+	<div class="container">
+  		<img class="imgP" src="https://i.pinimg.com/474x/1f/ee/1d/1fee1dcbf83dbba171794f6da15c3a8c.jpg">
+  			<div class="middle">
+    				<div class="text">
+					<h2>Front & Rear Shock Absorbers</h2>
+					<h5>Price:- <br><b>Undefined</b> <sup>*</sup></h5>
+				</div>
+				<button class="bttn" style="top: -450px;" onclick=" window.open('sParts_PD_F&RSA.html', '_blank'); return false;"><span>Buy Now </span></button>
+  			</div>
+	</div>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 

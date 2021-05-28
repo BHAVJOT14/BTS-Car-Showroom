@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "icon" href ="images\logo.png" type = "image/x-icon">
+<script src="script/header.js"></script>
+<link rel="stylesheet" href="stylesheets\styleGallery.css">
+<title>Gallery | BTS MOTORS</title>
+</head>
+<body>
+
+<div class="over">
+
+<div style="text-align:center; background-color: #333;">
+  <h1 style="color: white;"> Gallery</h1>
+  <hr>
+  <hr>
+</div>
+
+<div class="row">
+  <div class="column">
+  
+    <img id="active" src="https://www.hyundai.com/content/dam/hyundai/in/en/images/home/Hyundai-HomePage-SeptemberSalesPromo-PC-1860-720.jpg" alt="Nature" style="width:100%;height:200px"  onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://www.slashgear.com/wp-content/uploads/2020/03/40363-ProphecyConceptEV-1280x720.jpg" alt="Snow" style="width:100%; height:200px" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://www.hyundai-qatar.com/wcm/idc/groups/images/elantra-2013/hw078479.jpg" alt="Mountains" style="width:100% ; height:200px" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://i1.ytimg.com/vi/RawrIYeKjl4/maxresdefault.jpg" alt="Lights" style="width:100%; height:200px" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://cdn.autoportal.com/img/new-cars-gallery/hyundai/venue/exterior/hyundai-venue-641ce77d.jpg" alt="Lights" style="width:100% ; height:200px" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://cdni.autocarindia.com/Galleries/20170207111209_DSC_0253.jpg" alt="Lights" style="width:100% ; height:200px" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://wallpapercave.com/wp/wp3756078.jpg" alt="Lights" style="width:100%;  height:200px" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://www.team-bhp.com/?q=sites/default/files/styles/check_extra_large_for_review/public/2014-Hyundai-Accent-interior-1024x549.jpg" alt="Lights" style="width:100%; height:200px" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://www.formacar.com/storage/images/8/30040/a0b70b45296f42cba53716d79a9be45001.jpg" alt="Lights" style="width:100%; height:200px" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://thedriven.io/wp-content/uploads/2020/08/IONIQBrand_2.jpg" alt="Lights" style="width:100%; height:200px" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://res.heraldm.com/phpwas/restmb_idxmake_amp.php?idx=681&simg=%2Fcontent%2Fimage%2F2020%2F08%2F30%2F20200830000206_0.jpg" alt="Lights" style="width:100%; height:200px" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://i.ytimg.com/vi/MVAASWirx34/maxresdefault.jpg" alt="Lights" style="width:100%; height:200px" onclick="myFunction(this);">
+  </div>
+ </div> 
+</div>
+
+<div class="container">
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+</div>
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+document.getElementById("active").click();
+</script>
+
+
+<iframe src="footer.html" width="100%" height="680" scrolling="no" style="overflow: hidden; border:none;">
+
+</body>
+</html>

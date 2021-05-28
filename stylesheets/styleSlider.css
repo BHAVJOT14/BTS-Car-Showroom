@@ -1,0 +1,123 @@
+*
+{
+margin:0;
+padding:0;
+}
+
+.slider 
+{
+overflow:hidden;
+width:100%;
+height:100vh;
+}
+
+.slider figure div
+{
+float:left;
+width:20%;
+}
+
+.slider figure img
+{
+width:100%;
+height:100vh;
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+float:left;
+}
+
+.slider figure 
+{
+position:relative;
+width:500%;
+margin:0;
+animation:animate 25s infinite;
+}
+
+@keyframes animate
+{
+0%{left:0%;}
+10%{left:0%;}
+12%{left:-100%;}
+22%{left:-100%;}
+24%{left:-200%;}
+34%{left:-200%;}
+36%{left:-300%;}
+46%{left:-300%;}
+48%{left:0%;}
+58%{left:0%;}
+60%{left:-100%;}
+70%{left:-100%;}
+72%{left:-200%;}
+82%{left:-200%;}
+84%{left:-300%;}
+94%{left:-300%;}
+96%{left:0%;}	
+}
+
+.start {
+position: absolute;
+top: 95%;
+left: 52%;
+margin: -60px 0 0 -100px;
+font-size: 25px;
+color: white;
+font-weight: bold;
+border-radius: 10px;
+padding: 15px;
+background: rgb(0, 0, 0);
+background: rgba(0, 0, 0, 0.4);
+text-align: center;
+transition: all 0.5s;
+cursor: pointer;
+}
+
+.start:hover {
+animation: mymove 2s  infinite;
+transform: scale(1.1);
+background: rgba(0, 0, 0, 1);
+}
+
+@keyframes mymove {
+30% {box-shadow: 5px 0px 20px 5px #333;}
+50% {transform: scale(1.4);}
+}
+
+.start span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.start span:after {
+content: 'ON';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+.start:hover span {
+padding-right: 43px;
+}
+
+.start:hover span:after {
+opacity: 1;
+right: 0;
+}
+
+.timerWatch {
+background: rgba(51, 51, 51, 0.7);
+font-size: 20px;
+border-radius: 10px;
+color : white;
+text-align: center;
+padding: 5px;
+position: fixed;
+right: 0.5%;
+top: 0.5%;
+}
+

@@ -1,0 +1,32 @@
+body {
+text-align: center;
+margin: 0;
+}
+
+a {
+text-decoration: none;
+padding: 10px;
+margin: 10px;
+position: relative;
+bottom: 30px;
+color: black;
+}
+
+a:hover {
+text-decoration: underline;
+font-weight: bolder;
+font-size: 20px;
+}
+
+h1 {
+position: relative;
+bottom: 80px;
+}
+
+img {
+border-radius: 10px;
+}
+
+.a {
+width: 500px;
+}

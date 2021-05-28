@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>Test Drive Confiramation | BTS MOTORS</title>
+<head>
+<style>
+*{
+position: relative;
+margin: 10px;
+padding: 10px;
+background-color: #8eb28a;
+font-weight: bold;
+text-align: center;
+}
+
+input {
+width: 20%;
+height: 15px;
+font-weight: bolder;
+text-transform:uppercase;
+padding: 10px;
+}
+
+button {
+background-color: #333;
+opacity: 0.7;
+padding: 10px;
+color: white;
+border-radius: 10px;
+position: relative;
+left: 10px;
+}
+
+button:hover {
+cursor: pointer;
+opacity: 5;
+color: white;
+transform: scale(1.1);
+font-weight: bold;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1>Test Drive Booking Confirmation</h1>
+
+<script>
+var a1=new Array();
+var a2=new Array();
+
+var query = window.location.search.substring(1);
+
+a1=query.split("&");
+
+for (i=0;i<a1.length;i++){
+   a2=a1[i].split("=");
+   
+if (a2[1].toString().includes("+")){
+     a2[1]= a2[1].replace("+", " ");
+   }
+if (a2[0].toString().includes("+")){
+     a2[0]= a2[0].replace("+", " ");
+   }
+if (a2[0].toString().includes("%")){
+     a2[0]= a2[0].replace("%20", " ");
+   }
+if (a2[1].toString().includes("%")){
+     a2[1]= a2[1].replace("%20", " ");
+   }
+if (a2[1].toString().includes("%")){
+     a2[1]= a2[1].replace("%20", " ");
+   }
+if (a2[1].toString().includes("%")){
+     a2[1]= a2[1].replace("%20", " ");
+   }
+  document.write(a2[0]+" = "+"<input type='text' name='"+a2[0]+"' value='"+a2[1]+"' readonly></br>");
+}
+
+</script>
+
+
+
+
+<center><p>Click the button to print the current page.</p></center>
+
+<button onclick="window.print()">Print</button>
+<button onclick="document.location='index1.html'">HOME</button>
+
+</body>
+</html>

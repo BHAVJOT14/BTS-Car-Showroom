@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Book a Test Drive</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "icon" href ="images\logo.png" type = "image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="stylesheets\styleBooking_2.css">
+
+<script>
+
+var query = window.location.search.substring(1);
+function myfunction(){
+var date=document.getElementById("Date").value;
+var time=document.getElementById("Time").value;
+var actionTaken="booking_3.html"+"?"+query+"&Date="+date+"&Time="+time;
+window.location.replace(actionTaken);
+}
+	
+</script>
+
+
+</head>
+
+<body>
+
+
+<div class="bookTestDrive" id="sec1">
+<div class="slider">
+<figure>
+	<div class="slide">
+	<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/hyundai-1-1575903969.jpg" alt="hyundai logo">
+	</div>
+
+	<div class="slide">
+	<img src="https://autopolis.files.wordpress.com/2013/09/hyundai-pony-76-94a.jpg?w=584" alt="">
+	</div>
+	
+	<div class="slide">
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Hyundai_Pony_1984_Utrecht.jpg/1200px-Hyundai_Pony_1984_Utrecht.jpg" alt="">
+	</div>
+
+	<div class="slide">
+	<img src="https://www.fitmycar.com/journal/wp-content/uploads/2016/10/Hyundai-Pony-1.jpg" alt="">
+	</div>
+</figure>
+</div> 
+
+<div class="tD">
+	<h1>Book a Test Drive</h1>
+   	<h4>Select Your Preferred Date & Time</h4><br>
+  	<label for="select"><b>Select Your Date <sup>*</sup></b></label>
+  	<input type="date" id="Date" name="select" required>
+  	<label for="select"><b>Select Your Time <sup>*</sup></b></label>
+  	<input type="time" id="Time" name="select" min="09:00" max="18:00" required>
+  	<small><i class="fa fa-exclamation-circle" style="font-size:14px"> Office hours are 9am to 6pm</i></small>
+
+  	<button class="btn" onclick="myfunction()"><span>Next</span></button>
+</div>
+   
+<div class="back"><button><a href="booking.html"><span>Go Back</span></a></button></div>
+</div>
+   
+</div>
+</body>
+
+</html>

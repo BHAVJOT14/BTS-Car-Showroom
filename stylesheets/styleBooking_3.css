@@ -1,0 +1,195 @@
+
+body, html {
+height: 100%;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+box-sizing: border-box;
+margin:0;
+padding:0;
+}
+
+.slider 
+{
+overflow:hidden;
+width:100%;
+height:100vh;
+filter: blur(3px);
+}
+
+.slider figure div
+{
+float:left;
+width:20%;
+}
+
+.slider figure img
+{
+width:100%;
+height:100vh;
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+float:left;
+}
+
+.slider figure 
+{
+position:relative;
+width:500%;
+margin:0;
+animation:animate 20s infinite;
+}
+
+@keyframes animate
+{
+0%{left:0%;}
+10%{left:0%;}
+12%{left:-100%;}
+22%{left:-100%;}
+24%{left:-200%;}
+34%{left:-200%;}
+36%{left:-300%;}
+46%{left:-300%;}
+48%{left:-200%;}
+58%{left:-200%;}
+60%{left:-100%;}
+70%{left:-100%;}
+72%{left:0%;}
+84%{left:0%;}	
+}
+
+.tD {
+position: absolute;
+right: 150px;
+top: 100px;
+margin: 20px;
+width: 400px;
+padding: 16px;
+background-color: #333;
+color: white;
+height: 375px;
+top: 120px;
+left: 500px;
+border-radius: 10px;
+}
+
+input[type=text]
+{
+width: 70%;
+padding-top: 10px;
+padding-bottom: 10px;
+margin: 5px 0 22px 15px;
+border: none;
+background: #f1f1f1;
+}
+
+input {
+background-color: #ddd;
+text-align: center;
+}
+
+.btn {
+background-color: #8eb28a;
+position: relative;
+top: 15px;
+color: black;
+padding: 12px;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.7;
+}
+
+.btn:hover {
+opacity: 5;
+font-weight: bolder;
+transform: scale(1.1);
+padding-right: 25px;
+}  
+
+.btn span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.btn span:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+.btn:hover span:after {
+right: 0;
+}
+
+.back {
+display: block;
+position: relative;
+float: right;
+bottom: 40px;
+right: 30px;
+}
+
+.back:hover {
+transform: scale(1.1);
+}
+
+.back button {
+background-color: #333;
+border-radius: 3px;
+border: none;
+width: 100px;
+height: 30px;
+display: inline-block;
+}
+
+.back button a {
+text-decoration: none;
+color: white;
+}
+
+button span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+button span:after {
+content: '\00ab';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -25px;
+transition: 0.5s;
+}
+
+button:hover span {
+padding-right: 15px;
+}
+
+button:hover span:after {
+opacity: 1;
+right: 0;
+}
+
+select {
+position: relative;
+top: 5px; 
+width: 100%;
+height: 40px;
+padding: 10px;
+}
+
+select option {
+font-weight: 600;
+background-color: #333;
+color: white;
+}

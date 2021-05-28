@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hyundai Car | BTS MOTORS</title>
+<link rel = "icon" href ="images\logo.png" type = "image/x-icon">
+<link rel="stylesheet" href="stylesheets\styleSlider.css">
+</head>
+<body>
+
+<div class="slider">
+	<figure>
+		<div class="slide">
+		<img src="images\1.jpeg" alt="hyundai logo">
+		</div>
+
+		<div class="slide">
+		<img src="images\2.jpg" alt="">
+		</div>
+	
+		<div class="slide">
+		<img src="images\3.jpg" alt="">
+		</div>
+
+		<div class="slide">
+		<img src="images\4.jpeg" alt="">
+		</div>
+	</figure>
+	<button class="start" onclick="document.location='index1.html'"><span>IGNITION </span></button>
+
+	<div class="timerWatch">Redirect in <span id="seconds">10</span> sec
+	</div>
+
+	<script>
+
+	var seconds = 10; // seconds for HTML
+
+	function redirect() {
+    		document.location.href = 'index1.html';
+	}
+
+	function updateSecs() {
+    		document.getElementById("seconds").innerHTML = seconds;
+    		seconds--;
+    		if (seconds == -1) {
+        		redirect();
+    		}
+	}
+
+	function countdownTimer() {
+    		foo = setInterval(function () {
+        		updateSecs()
+    			}, 1000);
+		}
+
+	countdownTimer();
+
+	alert("You can wait for 10 seconds\nOR \nYou can press the IGNITION BUTTON!!")
+</script>
+</div>
+</body>
+</html>
